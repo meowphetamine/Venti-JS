@@ -4,13 +4,10 @@ const { REST } = require("@discordjs/rest")
 const { Routes } = require("discord-api-types/v9")
 const fs = require("fs")
 const { Player } = require("discord-player")
-const { InteractionType, ActivityType } = require("discord.js")
 
 dotenv.config()
 const TOKEN = process.env.TOKEN
-
-const LOAD_SLASH = process.argv[2] == "load" // node index.js LOAD
-
+const LOAD_SLASH = process.argv[2] == "load"
 const CLIENT_ID = "906807195042205706"
 const GUILD_ID = process.env.GUILD
 
@@ -52,8 +49,7 @@ if (LOAD_SLASH) {
             process.exit(1)
         }
     })
-}
-else {
+} else {
     client.on("ready", () => {
         console.log(`Logged in as ${client.user.tag}`)
     })
