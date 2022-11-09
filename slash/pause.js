@@ -8,10 +8,10 @@ module.exports = {
 		if (!queue) return await interaction.editReply(":no_entry: There are no songs in the queue")
 
         if (queue.connection) {
-            queue.setPaused(false);
+            queue.setPaused(true);
             await interaction.editReply(":no_entry:")
         } else {
-            queue.setPaused(true);
+            queue.setPaused(false);
             await interaction.editReply(":play_pause:")
         }
 	},
