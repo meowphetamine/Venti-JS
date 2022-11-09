@@ -8,7 +8,7 @@ const { Player } = require("discord-player")
 dotenv.config()
 const TOKEN = process.env.TOKEN
 const LOAD_SLASH = process.argv[2] == "load"
-const CLIENT_ID = "906807195042205706"
+const CLIENT_ID = process.env.CLIENT
 const GUILD_ID = process.env.GUILD
 
 const client = new Discord.Client({
