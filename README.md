@@ -1,4 +1,4 @@
-# 🏛️ Project VentiJS
+# 🏛️ Project Venti-JS
 This Java Discord bot was developed to serve as a music bot. Click [here](https://meowphetamine.github.io/src/media/venti.mp4) to see a demonstration.
 
 # 🔣 Commands
